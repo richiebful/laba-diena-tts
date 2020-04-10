@@ -482,7 +482,7 @@ int getDBWeightsAndLengthsFromFile(char * dataBaseFileName)
 	return NO_ERR;
 }
 
-EXPORT int initUnitSel(const char * dataBaseDirName)
+extern int initUnitSel(const char * dataBaseDirName)
 {
 	char laikKat[200];
 		
@@ -539,7 +539,7 @@ EXPORT int initUnitSel(const char * dataBaseDirName)
 	return NO_ERR;//SUCCESS;
 }
 
-EXPORT int selectUnits(unsigned short unitsRow[], unsigned short unitsRowNextSeparators[], unsigned short unitsRowDurr[], int unitsRowLength, int retUnits[], int * retCost)
+extern int selectUnits(unsigned short unitsRow[], unsigned short unitsRowNextSeparators[], unsigned short unitsRowDurr[], int unitsRowLength, int retUnits[], int * retCost)
 {
 	int MAX_SEQUENCES = unitsRowLength * 800;
 

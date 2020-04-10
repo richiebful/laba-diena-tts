@@ -38,7 +38,7 @@ void unloadLibraries()
 	unloadRateChange();
 }
 
-EXPORT BOOL loadLUSS()
+extern bool loadLUSS()
 {
 	wholeinput = NULL;
 	katLoaded[0] = 0; // tuscia eilute ""
@@ -46,7 +46,7 @@ EXPORT BOOL loadLUSS()
 	return TRUE;
 }
 
-EXPORT void unloadLUSS()
+extern void unloadLUSS()
 {
 	unloadLibraries();
 }
@@ -69,7 +69,7 @@ BOOL APIENTRY DllMain( HANDLE hModule,
 	return TRUE;
 }*/
 
-EXPORT int initLUSS(const char * szDataDirectory, const char *katVoice)
+extern int initLUSS(const char * szDataDirectory, const char *katVoice)
 {
 	if (katLoaded[0] == 0)
 	{
@@ -100,7 +100,7 @@ FINALLY:
 }
 
 //////////Funkcijos SAPI5 sasajai//////////////////////////////////////////////////////////////////////////////////////
-EXPORT int normalizeText1(char *text, char *normtextbuf, int bufsize, int *letPos)
+extern int normalizeText1(char *text, char *normtextbuf, int bufsize, int *letPos)
 {
 	return normalizeText(text, normtextbuf, bufsize, letPos);
 }
@@ -110,7 +110,7 @@ int spellText1(char *text, char *normtextbuf, int bufsize, int *letPos)
 	return spellText(text, normtextbuf, bufsize, letPos);
 }
 
-EXPORT int stressTranscr(char *sakinys, char *TrSakinys, int bufsize, unsigned short *unitsR, unsigned short *unitsRNextSep,
+extern int stressTranscr(char *sakinys, char *TrSakinys, int bufsize, unsigned short *unitsR, unsigned short *unitsRNextSep,
 						 int *unitsLet, int *letPos)
 {
 	int rules2use = 1155 * RULES2USE / 100; //default 75% total_auto_rules
@@ -121,7 +121,7 @@ EXPORT int stressTranscr(char *sakinys, char *TrSakinys, int bufsize, unsigned s
 	return n;
 }
 
-EXPORT int findUnits(unsigned short *unitsRows, unsigned short *unitsRowsNextSeparators,
+extern int findUnits(unsigned short *unitsRows, unsigned short *unitsRowsNextSeparators,
 					 int unitsRowsLength, unsigned int *retUnits, unsigned short *unitsDurr)
 {
 	//garsu id masyvas, skirtuku masyvas, masyvo dydis
@@ -137,7 +137,7 @@ EXPORT int findUnits(unsigned short *unitsRows, unsigned short *unitsRowsNextSep
 	return 0;
 }
 
-EXPORT int synthesizePhoneme(int greicioKoef, int tonas, unsigned short unitsDurr, unsigned int retUnit, short *phoneme, unsigned int naujo_signalo_masyvo_ilgis)
+extern int synthesizePhoneme(int greicioKoef, int tonas, unsigned short unitsDurr, unsigned int retUnit, short *phoneme, unsigned int naujo_signalo_masyvo_ilgis)
 {
 	int ilgis = change_phoneme_rate(greicioKoef * unitsDurr * 22050 / 1000 / dbilg[retUnit], tonas, retUnit, phoneme, naujo_signalo_masyvo_ilgis);
 	return ilgis;
@@ -146,7 +146,7 @@ EXPORT int synthesizePhoneme(int greicioKoef, int tonas, unsigned short unitsDur
 ////////////Pagrindine sintezavimo funkcija////////////////////////////////////////////////////////////////////////////////
 //struct event {short Id; short phonviz; int charOffset; long signOffset;};
 
-EXPORT int synthesizeWholeText(char *tekstas, short *signbuf, unsigned int *signbufsize, event *evarr, int *evarrsize, int greitis, int tonas)
+extern int synthesizeWholeText(char *tekstas, short *signbuf, unsigned int *signbufsize, event *evarr, int *evarrsize, int greitis, int tonas)
 {
 	int greitisM = greitis;
 	if (greitisM > 300)

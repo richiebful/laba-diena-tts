@@ -196,7 +196,7 @@ int auto_rules_function(variantas * variants_array, int varsk, int rules2use)
 	if (yra_skirtingu_var == 0) return 1; else return new_varsk;
 }
 //------------------------------------------------------------
-EXPORT int KircTranskr(char* eil, char* TrZodis, int TrEilIlg, unsigned short* unitsR,  unsigned short* unitsRNextSep,
+extern int KircTranskr(char* eil, char* TrZodis, int TrEilIlg, unsigned short* unitsR,  unsigned short* unitsRNextSep,
 				int* unitsLet, int* letPos, int rules2use)
 {
 char SkPb[ILGIS1], Kirt[ILGIS1], Trmp[ILGIS1], eilute[ILGIS1];

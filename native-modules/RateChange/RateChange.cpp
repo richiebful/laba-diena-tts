@@ -18,12 +18,12 @@
 
 void atlaisvinti_atminti_ir_inicializuoti();
 
-EXPORT void loadRateChange()
+extern void loadRateChange()
 {
 	atlaisvinti_atminti_ir_inicializuoti();
 }
 
-EXPORT void unloadRateChange()
+extern void unloadRateChange()
 {
 	atlaisvinti_atminti_ir_inicializuoti();
 }
@@ -493,7 +493,7 @@ int change_phoneme_rate_internal (int greitis, int tono_aukscio_pokytis, unsigne
 /*********************************************************
  * Nuskaitom BD is failu ir pakeiciam kalbejimo greiti
  ********************************************************/
-EXPORT int change_DB_rate (char *katVardas, int greitis, int tono_aukscio_pokytis, char dbfv1[][4],
+extern int change_DB_rate (char *katVardas, int greitis, int tono_aukscio_pokytis, char dbfv1[][4],
 					int *dbilg1, long *dbadr1, short ** wholeinputt1)
 {
 	clock_t begin_time,end_time;
@@ -664,7 +664,7 @@ EXPORT int change_DB_rate (char *katVardas, int greitis, int tono_aukscio_pokyti
 }
 
 
-EXPORT void getData(int * pIlgis, short ** ppData, int * pFonemuSkaicius, int ** ppFonemuIlgiai, char *** pppFonemos)
+extern void getData(int * pIlgis, short ** ppData, int * pFonemuSkaicius, int ** ppFonemuIlgiai, char *** pppFonemos)
 {
 	*pIlgis = signalo_ilgis;
 	*ppData = signalas;
@@ -676,7 +676,7 @@ EXPORT void getData(int * pIlgis, short ** ppData, int * pFonemuSkaicius, int **
 /*********************************************************
  * Nuskaitom BD is failu
  ********************************************************/
-EXPORT int initRateChange (const char *katVardas, char dbfv1[][4], int *dbilg1, long *dbadr1, short ** wholeinput1)
+extern int initRateChange (const char *katVardas, char dbfv1[][4], int *dbilg1, long *dbadr1, short ** wholeinput1)
 {
 	clock_t begin_time, end_time;
 
@@ -761,7 +761,7 @@ EXPORT int initRateChange (const char *katVardas, char dbfv1[][4], int *dbilg1, 
  *
  * Gr\xE0\xFEina naujo signalo ilg\xE1, jei pavyko, ir -1, jei nepavyko (jei masyve naujas_signalas neu\xFEteko vietos).
  ********************************************************/
-EXPORT int change_phoneme_rate (int greitis, int tono_aukscio_pokytis, unsigned int fonemos_nr,
+extern int change_phoneme_rate (int greitis, int tono_aukscio_pokytis, unsigned int fonemos_nr,
 						 short * naujas_signalas, unsigned int naujo_signalo_masyvo_ilgis)
 {
 	int galima_pailginti_naujas_signalas = 0;

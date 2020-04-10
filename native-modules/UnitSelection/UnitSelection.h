@@ -3,7 +3,7 @@
 
 #include "../include/common.h"
  
-EXPORT int initUnitSel(const char * dataBaseDirName);
-EXPORT int selectUnits(unsigned short unitsRow[], unsigned short unitsRowNextSeparators[], unsigned short unitsRowDurr[], int unitsRowLength, int retUnits[], int * retCost);
+extern int initUnitSel(const char * dataBaseDirName);
+extern int selectUnits(unsigned short unitsRow[], unsigned short unitsRowNextSeparators[], unsigned short unitsRowDurr[], int unitsRowLength, int retUnits[], int * retCost);
 
 #endif //!UNITSELECTION_H_INCLUDED

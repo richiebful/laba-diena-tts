@@ -43,7 +43,7 @@ fwrite(buf, 2, ib, fr);
 return 0;
 }
 
-EXPORT int raw2wav(int ib, char * szFilename, short * pBuffer)
+extern int raw2wav(int ib, char * szFilename, short * pBuffer)
 {
 	FILE *df;
 	int pastrSk;

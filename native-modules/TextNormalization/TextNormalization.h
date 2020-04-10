@@ -3,11 +3,11 @@
 
 #include "../include/common.h"
 
-EXPORT int initTextNorm(const char * szRulesFilesDirectory, const char * rulesFileName);
-EXPORT int normalizeText(char * buffer, char * retBuffer, int bufferSize, int * letPos);
-EXPORT int spellText(char * buffer, char * retBuffer, int bufferSize, int * letPos);
+extern int initTextNorm(const char * szRulesFilesDirectory, const char * rulesFileName);
+extern int normalizeText(char * buffer, char * retBuffer, int bufferSize, int * letPos);
+extern int spellText(char * buffer, char * retBuffer, int bufferSize, int * letPos);
 
-EXPORT BOOL loadTextNorm(char*);
-EXPORT void unloadTextNorm();
+extern BOOL loadTextNorm(char*);
+extern void unloadTextNorm();
 
 #endif
