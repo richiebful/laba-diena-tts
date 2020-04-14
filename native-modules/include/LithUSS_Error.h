@@ -10,8 +10,6 @@
 #ifndef LITHUSS_ERROR_H_INCLUDED
 #define LITHUSS_ERROR_H_INCLUDED
 
-#include "common.h"
-
 #define	NO_ERR 0						//No error occurred
 
 //TextNormalization klaidu kodai

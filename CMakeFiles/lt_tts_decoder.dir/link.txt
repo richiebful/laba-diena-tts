@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,liblt_tts_decoder.so.1.0.0 -o liblt_tts_decoder.so.1.0.0 CMakeFiles/lt_tts_decoder.dir/native-modules/Decoder/Decoder.cpp.o 

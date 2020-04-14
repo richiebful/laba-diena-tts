@@ -1,0 +1,2 @@
+/home/rfulop/workspace/laba-diena-tts/lib/liblt_tts_decoder.so.1.0.0
+/home/rfulop/workspace/laba-diena-tts/lib/liblt_tts_decoder.so

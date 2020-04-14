@@ -1,3 +1,0 @@
-# transcrLUSS
-
-Pronunciation stress heuristics.

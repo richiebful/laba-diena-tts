@@ -21,9 +21,9 @@ unsigned short **abbListsIsWithSep;
 int *abbSizes;
 int totalFileBuffers = 0;
 
-extern BOOL loadTextNorm(char*)
+extern bool loadTextNorm(char*)
 {
-	return TRUE;
+	return true;
 }
 
 extern void unloadTextNorm()

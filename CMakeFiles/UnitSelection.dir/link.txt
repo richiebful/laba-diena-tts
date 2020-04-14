@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libUnitSelection.so.1.0.0 -o libUnitSelection.so.1.0.0 CMakeFiles/UnitSelection.dir/native-modules/UnitSelection/UnitSelection.cpp.o CMakeFiles/UnitSelection.dir/native-modules/UnitSelection/strtokf.cpp.o 

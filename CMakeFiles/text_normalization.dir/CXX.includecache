@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rfulop/workspace/laba-diena-tts/native-modules/TextNormalization/TextNormalization.cpp
+TextNormalization.h
+/home/rfulop/workspace/laba-diena-tts/native-modules/TextNormalization/TextNormalization.h
+stringWithLetterPosition.h
+/home/rfulop/workspace/laba-diena-tts/native-modules/TextNormalization/stringWithLetterPosition.h
+../include/LithUSS_Error.h
+/home/rfulop/workspace/laba-diena-tts/native-modules/include/LithUSS_Error.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/rfulop/workspace/laba-diena-tts/native-modules/TextNormalization/TextNormalization.h
+
+/home/rfulop/workspace/laba-diena-tts/native-modules/TextNormalization/stringWithLetterPosition.cpp
+stringWithLetterPosition.h
+/home/rfulop/workspace/laba-diena-tts/native-modules/TextNormalization/stringWithLetterPosition.h
+string.h
+-
+
+/home/rfulop/workspace/laba-diena-tts/native-modules/TextNormalization/stringWithLetterPosition.h
+string
+-
+
+/home/rfulop/workspace/laba-diena-tts/native-modules/include/LithUSS_Error.h
+

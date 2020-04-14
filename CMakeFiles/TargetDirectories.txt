@@ -1,0 +1,7 @@
+/home/rfulop/workspace/laba-diena-tts/CMakeFiles/rebuild_cache.dir
+/home/rfulop/workspace/laba-diena-tts/CMakeFiles/TextNormalization.dir
+/home/rfulop/workspace/laba-diena-tts/CMakeFiles/LithuanianTTS.dir
+/home/rfulop/workspace/laba-diena-tts/CMakeFiles/UnitSelection.dir
+/home/rfulop/workspace/laba-diena-tts/CMakeFiles/edit_cache.dir
+/home/rfulop/workspace/laba-diena-tts/CMakeFiles/Transcription.dir
+/home/rfulop/workspace/laba-diena-tts/CMakeFiles/RateChange.dir

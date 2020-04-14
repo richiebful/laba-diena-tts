@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rfulop/workspace/laba-diena-tts/native-modules/UnitSelection/UnitSelection.cpp
+../include/LithUSS_Error.h
+/home/rfulop/workspace/laba-diena-tts/native-modules/include/LithUSS_Error.h
+UnitSelection.h
+/home/rfulop/workspace/laba-diena-tts/native-modules/UnitSelection/UnitSelection.h
+string
+-
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+
+/home/rfulop/workspace/laba-diena-tts/native-modules/UnitSelection/UnitSelection.h
+
+/home/rfulop/workspace/laba-diena-tts/native-modules/UnitSelection/strtokf.cpp
+string.h
+-
+
+/home/rfulop/workspace/laba-diena-tts/native-modules/include/LithUSS_Error.h
+
